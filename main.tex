@@ -2,7 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage{soul}
-\usepackage{pdfpcnotes}
+%\usepackage{pdfpcnotes}
 \usepackage{listings}
 
 \usetheme{Hannover}
@@ -37,17 +37,30 @@
 
 \begin{frame}
     \frametitle{Überblick}
-    \begin{itemize}
-        \item Vollständig in C++17 geschrieben
-            \pause
-        \item Modularer Aufbau (Trennung in Network-, Messages-, GameLogic- und Serverkomponente)
-            \pause
-        \item MVC
-            \pause
-        \item Replay implementiert
-            \pause
-        \item Alle Mods implementiert
-    \end{itemize}
+    \begin{columns}
+        \begin{column}{0.3\textwidth}
+            \begin{center}
+                \begin{figure}[H]
+                    \includegraphics[height=6cm]{screenshot.png}
+                \end{figure}
+            \end{center}
+        \end{column}
+        \begin{column}{0.7\textwidth}
+            \begin{itemize}
+                \item Vollständig in C++17 geschrieben
+                    \pause
+                \item Modularer Aufbau (Trennung in Network-, Messages-, GameLogic- und Serverkomponente)
+                    \pause
+                \item MVC
+                    \pause
+                \item Replay implementiert
+                    \pause
+                \item Alle Mods implementiert
+                    \pause
+                \item Mehrere zeitgleiche Spiele
+            \end{itemize}
+        \end{column}
+    \end{columns}
 \end{frame}
 
 \begin{frame}
@@ -64,7 +77,5 @@
         \item CI (Testen des Docker-Images, Unittests (mehrfache Wiederholung in unterschiedlicher Reihenfolge))
     \end{itemize}
 \end{frame}
-
-
 
 \end{document}
